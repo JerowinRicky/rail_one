@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<Schema name="temp" id="temp">
+		<SimpleField type="string" name="id">
+		</SimpleField>
+	</Schema>
+	<Placemark id="LWBK28QIR2H">
+		<name>Somnath</name>
+		<ExtendedData>
+			<SchemaData schemaUrl="#temp">
+				<SimpleData name="id">LWBK28QIR2H</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						70.314112949,20.928673247,0 70.366422131,20.966864181,0 70.410285552,20.958436309,0 70.4547454,20.940322071,0 70.488327607,20.886997821,0 70.480832349,20.860796812,0 70.452648761,20.845087782,0 70.418270404,20.859026291,0 70.399322586,20.866085143,0 70.391127239,20.870190763,0 70.388498555,20.876306948,0 70.368477364,20.893426999,0 70.314112949,20.928673247,0
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,70 @@
+name: railone
+description: "RailOne - Recreated Indian Railways Super App (CRIS Aikyam)"
+publish_to: "none"
+version: 2.1.79+253
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management & Service Locator
+  get: ^4.6.6
+  get_it: ^7.7.0
+
+  # Networking & HTTP
+  dio: ^5.7.0
+  connectivity_plus: ^6.1.0
+
+  # Local Storage & Security
+  shared_preferences: ^2.3.3
+  flutter_secure_storage: ^9.2.2
+  sqflite: ^2.4.1
+
+  # UI Design System & Component Library
+  flutter_svg: ^2.0.16
+  carousel_slider: ^5.0.0
+  dots_indicator: ^3.0.0
+  shimmer: ^3.0.0
+  pin_code_fields: ^8.0.1
+  slider_button: ^2.1.0
+  intl_phone_field: ^3.2.0
+  flutter_typeahead: ^5.2.0
+  badges: ^3.1.2
+  font_awesome_flutter: ^10.8.0
+  cupertino_icons: ^1.0.8
+
+  # Geolocation & Geofencing
+  geolocator: ^13.0.2
+  latlong2: ^0.9.1
+
+  # Barcode, PDF & Utilities
+  qr_flutter: ^4.1.0
+  intl: ^0.19.0
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/images/others/kml/
+    - assets/locales/
+    - assets/certificates/
+    - assets/packages/flutter_billdesk_sdk/assets/svgs/
+
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSans-Bold.ttf
+          weight: 700

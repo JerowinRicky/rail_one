@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<Schema name="temp" id="temp">
+		<SimpleField type="string" name="id">
+		</SimpleField>
+	</Schema>
+	<Placemark id="0IXOP60A9VXV">
+		<name>Rajkot</name>
+		<ExtendedData>
+			<SchemaData schemaUrl="#temp">
+				<SimpleData name="id">0IXOP60A9VXV</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						70.652378117,22.313617457,0 70.631028174,22.398068342,0 70.685235123,22.422315904,0 70.772833504,22.437233229,0 71.00897157,22.450764186,0 71.09147494,22.426479564,0 71.065174548,22.336667061,0 70.950241343,22.270781077,0 70.958107811,22.233538116,0 70.894088569,22.168484143,0 70.900549796,22.133577019,0 70.790600282,22.127137097,0 70.715922573,22.148545162,0 70.665288317,22.180787878,0 70.641621409,22.208596586,0 70.624706337,22.235225889,0 70.632751829,22.268075922,0 70.652378117,22.313617457,0
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

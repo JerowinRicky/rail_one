@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<Schema name="temp" id="temp">
+		<SimpleField type="string" name="id">
+		</SimpleField>
+	</Schema>
+	<Placemark id="V6Z5NSKYJ4I">
+		<name>Dwarka</name>
+		<ExtendedData>
+			<SchemaData schemaUrl="#temp">
+				<SimpleData name="id">V6Z5NSKYJ4I</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						68.921105569,22.217938543,0 68.912187083,22.237636816,0 68.87861908,22.294709401,0 68.965685555,22.48719728,0 69.180909728,22.522144393,0 69.237836661,22.35318096,0 69.167863852,22.234944857,0 69.10139763,22.060632039,0 68.954733149,22.208488041,0 68.921105569,22.217938543,0
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
