@@ -8,7 +8,22 @@ import '../../../core/constants/app_assets.dart';
 import '../../../data/models/ticket_model.dart';
 
 class DigitalTicketView extends StatefulWidget {
-  const DigitalTicketView({super.key});
+  final String? ticketNumber;
+  final String? trainName;
+  final String? sourceStation;
+  final String? destStation;
+  final String? pnr;
+  final String? fare;
+
+  const DigitalTicketView({
+    super.key,
+    this.ticketNumber,
+    this.trainName,
+    this.sourceStation,
+    this.destStation,
+    this.pnr,
+    this.fare,
+  });
 
   @override
   State<DigitalTicketView> createState() => _DigitalTicketViewState();
@@ -23,7 +38,27 @@ class _DigitalTicketViewState extends State<DigitalTicketView> {
   void initState() {
     super.initState();
     final args = Get.arguments;
-    if (args is DigitalTicket) {
+    if (widget.ticketNumber != null) {
+      final now = DateTime.now();
+      ticket = DigitalTicket(
+        ticketId: widget.ticketNumber!,
+        type: TicketType.journey,
+        mode: TicketMode.paperless,
+        sourceStation: widget.sourceStation ?? 'NDLS',
+        sourceStationName: widget.sourceStation ?? 'New Delhi',
+        destinationStation: widget.destStation ?? 'BCT',
+        destinationStationName: widget.destStation ?? 'Mumbai Central',
+        trainType: widget.trainName ?? 'Suburban Express',
+        classType: 'Second Class (2S)',
+        adultCount: 1,
+        childCount: 0,
+        fare: double.tryParse((widget.fare ?? '29.10').replaceAll(RegExp(r'[^0-9.]'), '')) ?? 29.10,
+        bookingTime: now,
+        validTill: now.add(const Duration(hours: 3)),
+        qrPayload: 'CRIS:UTS:${widget.ticketNumber}:${widget.sourceStation}:${widget.destStation}:${widget.fare}',
+        barcodeNumber: '8492019842',
+      );
+    } else if (args is DigitalTicket) {
       ticket = args;
     } else {
       // Default sample ticket
