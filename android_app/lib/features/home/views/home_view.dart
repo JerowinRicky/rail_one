@@ -63,7 +63,7 @@ class _HomeViewState extends State<HomeView> {
           IconButton(
             icon: const Icon(Icons.language_rounded, color: Colors.white),
             tooltip: 'Change Language',
-            onPressed: () => Get.bottomSheet(const LanguageModal()),
+            onPressed: () => Get.bottomSheet(const LanguageSelectModal()),
           ),
           IconButton(
             icon: Badge(
@@ -952,7 +952,7 @@ class _HomeViewState extends State<HomeView> {
         const SizedBox(height: 6),
         DotsIndicator(
           dotsCount: _carouselImages.length,
-          position: _carouselIndex.toDouble(),
+          position: _carouselIndex,
           decorator: DotsDecorator(
             size: const Size.square(6.0),
             activeSize: const Size(16.0, 6.0),
